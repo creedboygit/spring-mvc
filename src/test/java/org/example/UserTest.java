@@ -30,7 +30,7 @@ class UserTest {
         User user = new User();
 
         // when
-//        user.initPassword(new WrongFixedPasswordGenerator());1
+//        user.initPassword(new WrongFixedPasswordGenerator());
         user.initPassword(() -> "ab");
 
         // then
