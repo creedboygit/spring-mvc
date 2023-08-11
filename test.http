@@ -1,0 +1,12 @@
+GET http://localhost:7777/calculateThird?operand1=20&operator=/&operand2=10
+
+###
+###
+GET http://localhost:7777/calculateFirst?operand1=20&operator=/&operand2=10
+
+###
+GET http://localhost:7777/calculateSecond?operand1=20&operator=%2B&operand2=10
+
+###
+GET http://localhost:7777/calculate
+
