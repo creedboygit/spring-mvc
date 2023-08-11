@@ -1,9 +1,9 @@
-package org.example;
+package org.example.calculator;
 
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.Servlet;
+import javax.servlet.GenericServlet;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -14,19 +14,12 @@ import org.example.calculator.domain.PositiveNumber;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@WebServlet("/calculateFirst")
-public class CalculatorServletFirst implements Servlet {
+@WebServlet("/calculateSecond")
+public class CalculatorServletSecond extends GenericServlet {
 
-    private static final Logger log = LoggerFactory.getLogger(CalculatorServletFirst.class);
+    private static final Logger log = LoggerFactory.getLogger(CalculatorServletSecond.class);
 
     private ServletConfig servletConfig;
-
-    @Override
-    public void init(ServletConfig servletConfig) throws ServletException {
-
-        log.info("init");
-        this.servletConfig = servletConfig;
-    }
 
     @Override
     public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
@@ -40,20 +33,5 @@ public class CalculatorServletFirst implements Servlet {
 
         PrintWriter writer = response.getWriter();
         writer.println(result);
-    }
-
-    @Override
-    public void destroy() {
-        // resource release
-    }
-
-    @Override
-    public ServletConfig getServletConfig() {
-        return this.servletConfig;
-    }
-
-    @Override
-    public String getServletInfo() {
-        return null;
     }
 }

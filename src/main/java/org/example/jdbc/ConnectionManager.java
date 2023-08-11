@@ -1,4 +1,4 @@
-package org.example;
+package org.example.jdbc;
 
 import com.zaxxer.hikari.HikariDataSource;
 import java.sql.Connection;

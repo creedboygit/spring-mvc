@@ -1,4 +1,4 @@
-package org.example;
+package org.example.jdbc;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
