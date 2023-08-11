@@ -13,6 +13,9 @@ dependencies {
 
     implementation 'org.passay:passay:1.6.1'
 
+    implementation 'com.zaxxer:HikariCP:4.0.3'
+    implementation 'org.springframework:spring-jdbc:5.3.22'
+
     implementation 'org.apache.tomcat.embed:tomcat-embed-core:8.5.86'
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:8.5.86'
 
@@ -26,6 +29,9 @@ dependencies {
 
     testImplementation 'org.assertj:assertj-core:3.23.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.8.2'
+
+    testImplementation 'com.h2database:h2:2.1.214'
+
 }
 
 test {
