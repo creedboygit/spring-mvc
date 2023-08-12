@@ -1,1 +1,11 @@
+POST http://localhost:7777/users
+Content-Type: application/x-www-form-urlencoded
+
+userId = aaa &
+name = bbb
+
+###
+GET http://localhost:7777/users
+
+###
 GET http://localhost:7777
